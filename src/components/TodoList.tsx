@@ -8,11 +8,11 @@ function TodoList(){
     console.log(todoList)
     return(
         <div>
-            {todoList.map((todo,id)=>(
+            {/* {todoList.map((todo,id)=>(
                 <div key={id}>
                 {todo.title}
                 </div>
-            ))}
+            ))} */}
         </div>
     )
 

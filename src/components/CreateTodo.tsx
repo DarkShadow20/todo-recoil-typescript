@@ -7,20 +7,15 @@ let id = 0;
 function getId() {
   return id++;
 }
-interface todoList {
-    id: number;
-    text:string;
-    description:string;
-    isCompleted:boolean;
-}
+
 function CreateTodo (){
-    const [inputTitle, setInputValuTitle] = useState<string>()
-    const [description,setDescription] = useState<string>()
+    const [inputTitle, setInputValuTitle] = useState<string>("")
+    const [description,setDescription] = useState<string>("")
 
     const setTodo = useSetRecoilState(todoListState);
 
     const handleClick = () => {
-        setTodo((prev ) => [...prev, 
+        setTodo((prev) => [ ...prev,
             {
                 id : getId(),
                 text : inputTitle,
