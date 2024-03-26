@@ -1,15 +1,15 @@
-import { useState } from 'react'
 import { RecoilRoot } from 'recoil'
 import './App.css'
-import Todo  from './components/Todo'
+import CreateTodo  from './components/CreateTodo'
+import TodoList from './components/TodoList'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
     <RecoilRoot>
-      <Todo/>
+      <CreateTodo/>
+      <TodoList/>
     </RecoilRoot>
     </>
   )
