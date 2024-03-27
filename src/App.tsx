@@ -1,5 +1,5 @@
-import { RecoilRoot } from 'recoil'
 import './App.css'
+import CompletedList from './components/CompletedList'
 import CreateTodo  from './components/CreateTodo'
 import TodoList from './components/TodoList'
 
@@ -7,10 +7,17 @@ function App() {
 
   return (
     <>
-    <RecoilRoot>
-      <CreateTodo/>
-      <TodoList/>
-    </RecoilRoot>
+    <div className='flex justify-around'>
+      <div>
+        <CreateTodo/>
+      </div>
+      <div>
+        <TodoList/>
+      </div>
+      <div>
+        <CompletedList/>
+      </div>
+    </div>
     </>
   )
 }

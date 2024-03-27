@@ -18,7 +18,7 @@ function CreateTodo (){
         setTodo((prev) => [ ...prev,
             {
                 id : getId(),
-                text : inputTitle,
+                title : inputTitle,
                 description : description,
                 isCompleted : false
         }]);
@@ -32,6 +32,7 @@ function CreateTodo (){
             <div className="p-2">
                 <input 
                     type="text" 
+                    value={inputTitle}
                     onChange={(e) => setInputValuTitle(e.target.value)} 
                     className="border-2 border-black rounded" 
                     placeholder="title" 
@@ -40,6 +41,7 @@ function CreateTodo (){
             <div className="p-2">
                 <input 
                     type="text" 
+                    value={description}
                     onChange={(e) => setDescription(e.target.value)} 
                     className="border-2 border-black rounded" 
                     placeholder="description" 

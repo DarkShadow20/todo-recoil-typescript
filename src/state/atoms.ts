@@ -1,11 +1,7 @@
 import { atom} from "recoil";
+import { Todos } from "./types";
 
-interface Todos {
-    id: number;
-    text:string;
-    description:string;
-    isCompleted:boolean;
-}
+
 
 export const todoListState= atom({
     key: 'todoAtomFamily',
